@@ -22,7 +22,16 @@ relative_path: ../
   {% endcapture %}
   {% include stripe-ad.html %}
 
-  {% include accessibility/background.html %}
-  {% include accessibility/using-with-accessibility.html %}
+  <div class="row">
+    <div class="col-md-4 col-md-push-8">
+      {% include accessibility/cta-cdn-ally.html %}
+    </div>
+
+    <div class="col-md-8 col-md-pull-4">
+      {% include accessibility/background.html %}
+      {% include accessibility/using-with-accessibility.html %}
+    </div>
+  </div>
+
   {% include accessibility/other.html %}
 </div>
